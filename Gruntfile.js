@@ -48,11 +48,11 @@ module.exports = function (grunt) {
                 files: ['Gruntfile.js']
             },
             sass: {
-                files: ['<%= config.app %>/sass/{,*/}*.{scss,sass}'],
+                files: ['<%= config.app %>/assets/sass/{,*/}*.{scss,sass}'],
                 tasks: ['sass:server', 'autoprefixer']
             },
             styles: {
-                files: ['<%= config.app %>/styles/{,*/}*.css'],
+                files: ['<%= config.app %>/assets/css/{,*/}*.css'],
                 tasks: ['newer:copy:styles', 'autoprefixer']
             },
             livereload: {
@@ -70,7 +70,7 @@ module.exports = function (grunt) {
         // The actual grunt server settings
         connect: {
             options: {
-                port: 9000,
+                port: 80,
                 open: true,
                 livereload: 35729,
                 // Change this to '0.0.0.0' to access the server from outside
@@ -78,6 +78,7 @@ module.exports = function (grunt) {
             },
             livereload: {
                 options: {
+                    port: 9000,
                     middleware: function(connect) {
                         return [
                             connect.static('.tmp'),
@@ -159,7 +160,7 @@ module.exports = function (grunt) {
             dist: {
                 files: [{
                     expand: true,
-                    cwd: '<%= config.app %>/sass',
+                    cwd: '<%= config.app %>/assets/sass',
                     src: ['*.scss'],
                     dest: '.tmp/styles',
                     ext: '.css'
@@ -168,9 +169,9 @@ module.exports = function (grunt) {
             server: {
                 files: [{
                     expand: true,
-                    cwd: '<%= config.app %>/sass',
+                    cwd: '<%= config.app %>/assets/sass',
                     src: ['*.scss'],
-                    dest: '.tmp/styles',
+                    dest: '<%= config.app %>/assets/css',
                     ext: '.css'
                 }]
             }
@@ -194,10 +195,10 @@ module.exports = function (grunt) {
         // Automatically inject Bower components into the HTML file
         bowerInstall: {
             app: {
-                src: ['<%= config.app %>/index.html']
+                src: ['<%= config.app %>/index.php']
             },
             sass: {
-                src: ['<%= config.app %>/sass/{,*/}*.{scss,sass}']
+                src: ['<%= config.app %>/assets/sass/{,*/}*.{scss,sass}']
             }
         },
 
@@ -219,12 +220,12 @@ module.exports = function (grunt) {
         // Reads HTML for usemin blocks to enable smart builds that automatically
         // concat, minify and revision files. Creates configurations in memory so
         // additional tasks can operate on them
-        useminPrepare: {
-            options: {
-                dest: '<%= config.dist %>'
-            },
-            html: '<%= config.app %>/index.html'
-        },
+        // useminPrepare: {
+        //     options: {
+        //         dest: '<%= config.dist %>'
+        //     },
+        //     html: '<%= config.app %>/site/templates/home.php'
+        // },
 
         // Performs rewrites based on rev and the useminPrepare configuration
         usemin: {
@@ -325,7 +326,7 @@ module.exports = function (grunt) {
             styles: {
                 expand: true,
                 dot: true,
-                cwd: '<%= config.app %>/styles',
+                cwd: '<%= config.app %>/assets/css',
                 dest: '.tmp/styles/',
                 src: '{,*/}*.css'
             }
@@ -403,11 +404,11 @@ module.exports = function (grunt) {
 
     grunt.registerTask('build', [
         'clean:dist',
-        'useminPrepare',
+        // 'useminPrepare',
         'concurrent:dist',
         'autoprefixer',
-        'concat',
-        'cssmin',
+        // 'concat',
+        // 'cssmin',
         'copy:dist',
         'modernizr',
         'rev',
