@@ -1,0 +1,15 @@
+{
+  "name": "muriel-labro",
+  "private": true,
+  "version": "0.0.1",
+  "dependencies": {
+    "gsap": "~1.18.0",
+    "jquery": "~1.11.2",
+    "modernizr": "~2.8.3",
+    "neat": "~1.7.2",
+    "normalize-css": "~3.0.3"
+  },
+  "devDependencies": {
+    "gsap": "~1.18.0"
+  }
+}
