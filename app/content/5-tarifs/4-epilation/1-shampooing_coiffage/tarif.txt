@@ -1,0 +1,13 @@
+Title: Shampooing coiffage
+
+----
+
+Category: coiffure
+
+----
+
+Price1: 24€
+
+----
+
+Price2: 27€

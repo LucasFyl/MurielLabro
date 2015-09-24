@@ -1,0 +1,103 @@
+/* Bourbon & Neat Libraries ***********************/
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+/* Own mixins ***********************/
+/* Base styles ***********************/
+/**
+ * Base styles ~ Grid options
+ */
+/**
+ * Base styles ~ Media Query options
+ */
+/**
+ * Base styles ~ Type
+ */
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin: 14px 0;
+  font-weight: normal;
+  font-style: normal;
+  text-rendering: optimizeLegibility; }
+
+h1,
+.h1 {
+  font-size: 44px;
+  line-height: 48.4px;
+  font-size: 4.4rem;
+  line-height: 4.84rem; }
+
+h2,
+.h2 {
+  font-size: 37px;
+  line-height: 40.7px;
+  font-size: 3.7rem;
+  line-height: 4.07rem; }
+
+h3,
+.h3 {
+  font-size: 27px;
+  line-height: 29.7px;
+  font-size: 2.7rem;
+  line-height: 2.97rem; }
+
+h4,
+.h4 {
+  font-size: 23px;
+  line-height: 25.3px;
+  font-size: 2.3rem;
+  line-height: 2.53rem; }
+
+h5,
+.h5 {
+  font-size: 17px;
+  line-height: 18.7px;
+  font-size: 1.7rem;
+  line-height: 1.87rem; }
+
+h6,
+.h6 {
+  font-size: 14px;
+  line-height: 15.8px;
+  font-size: 1.4rem;
+  line-height: 1.58rem; }
+
+p {
+  margin-bottom: 17px;
+  font-family: inherit;
+  font-weight: normal; }
+
+hr {
+  margin: 22px 0 21px;
+  height: 0;
+  border-width: 1px 0 0;
+  clear: both; }
+
+em,
+i {
+  font-style: italic;
+  line-height: inherit; }
+
+strong,
+b {
+  font-weight: bold;
+  line-height: inherit; }
+
+small {
+  font-size: 60%;
+  line-height: inherit; }
+
+/* Reusable Component styles  ***********************/
+/* Individual pages styles  ***********************/
+/* Plugin styles  ***********************/
+body {
+  background: green; }
+
+/*# sourceMappingURL=main.css.map */

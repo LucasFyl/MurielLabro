@@ -1,0 +1,32 @@
+Title: Le concept du salon
+
+----
+
+Text: 
+
+Après avoir fait leurs armes chez les plus grands noms de la coiffure Michel et Emmanuelle Casanave officient à deux pas du quartier Moufftard, ce lieu sobre et élégant vous accueille dans une ambiance aux couleurs naturelles, douces, et contemporaines.
+Leur philosophie de travail, du sur mesure pour une vrai qualité, leur priorité, écouter, entendre, comprendre, et conseiller sont les maîtres mots de leur passion, pour eux la coiffure doit être créée, construite, façonnée, car elle est à ce titre support d'expression et de communication des individus dans notre société.
+
+----
+
+Title2: Le titre 2
+
+----
+
+Text2: Après avoir fait leurs armes chez les plus grands noms de la coiffure Michel et Emmanuelle Casanave officient à deux pas du quartier Moufftard, ce lieu sobre et élégant vous accueille dans une ambiance aux couleurs naturelles, douces, et contemporaines.
+
+----
+
+Title3: Le titre 3
+
+----
+
+Text3: Après avoir fait leurs armes chez les plus grands noms de la coiffure Michel et Emmanuelle Casanave officient à deux pas du quartier Moufftard, ce lieu sobre et élégant vous accueille dans une ambiance aux couleurs naturelles, douces, et contemporaines.
+
+----
+
+Title4: Le titre 4
+
+----
+
+Text4: Après avoir fait leurs armes chez les plus grands noms de la coiffure Michel et Emmanuelle Casanave officient à deux pas du quartier Moufftard, ce lieu sobre et élégant vous accueille dans une ambiance aux couleurs naturelles, douces, et contemporaines.
