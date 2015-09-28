@@ -16,8 +16,10 @@
 /* Base styles ***********************/
 
 @import "_base/_grid-settings";
+@import "_base/_colors";
 @import "_base/_font-face";
 @import "_base/_type";
+@import "_base/_general";
 
 
 /* Reusable Component styles  ***********************/
@@ -33,7 +35,3 @@
 /* Plugin styles  ***********************/
 
 // @import "plugins/tabs";
-
-body {
-	background: green;
-}

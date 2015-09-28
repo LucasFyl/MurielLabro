@@ -7,11 +7,8 @@ password: >
 language: en
 role: admin
 history:
-  - >
-    tarifs/prestation/couleur/couleur-le-respect-du-cheveu-par-inoa
-  - tarifs/prestation/couleur
-  - >
-    tarifs/indispensable/decoloration/les-levres
-  - tarifs/indispensable/permanente/les-cils
-  - >
-    tarifs/indispensable/maquillage/maquillage-personnalise
+  - stylists/valerie
+  - stylists/sabine
+  - stylists/corinne
+  - stylists/sandrine
+  - stylists/kim

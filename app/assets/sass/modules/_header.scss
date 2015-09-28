@@ -1,0 +1,27 @@
+nav {
+	width: 100%;
+	ul {
+		list-style: none;
+		width: 88rem;
+		margin: 0 auto;
+		padding-top: 7.5rem;
+		li {
+			display: inline-block;
+			padding: 0 3.75rem;
+			a {
+				font-size: 1.4rem;
+				text-transform: uppercase;
+				font-family: $heading-font;
+				color: white;
+				text-align:center;
+				text-decoration:none;
+			}
+			&:first-child {
+				padding-left: 0;
+			}
+			&:last-child {
+				padding-right: 0;
+			}
+		}
+	}
+}

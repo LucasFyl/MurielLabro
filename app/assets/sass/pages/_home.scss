@@ -1,0 +1,370 @@
+#landing {
+	height: 100vh;
+	min-height: 100vh;
+	width: 100%;
+	position:relative;
+	overflow: auto;
+	background: url('../images/landing.jpg') no-repeat center center;
+	background-size: cover;
+
+	.vertical-center {
+		@include vertical-center;
+		width: 100%;
+		overflow: hidden;
+		> div {
+			// width: 55%;
+			max-width: 52rem;
+			display:block;
+			margin: 0 auto;
+
+			.brand {
+				img {
+					@include size(6rem);
+					display:block;
+					margin: 0 auto;
+					margin-bottom: 4.5rem;
+				}
+				h1, h2 {
+					font-size: 1.6rem;
+					line-height: 1.6rem;
+				}
+				h1 {
+					font-family: $heading-font;
+					color: white;
+					text-align:center;
+					margin-top: 0;
+					margin-bottom: 1.5rem;
+				}
+				h2 {
+					font-family: $heading-italic;
+					color: white;
+					text-align:center;
+					font-style: italic;
+				}
+			}
+			.asset-wave {
+				margin-top: 3.25rem;
+				margin-bottom: 8rem;
+			}
+			h3 {
+				font-family: $heading-font;
+				text-align:center;
+				color: white;
+				font-size: 4.5rem;
+				line-height: 6.2rem;
+			}
+		}
+	}
+}
+section {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+#concept {
+	margin-top: 10.5rem;
+	margin-bottom: 10.5rem;
+	.square-grid {
+		@include outer-container;
+	}
+
+	.square {
+		// .overlay {
+		// 	display:none;
+		// }	
+		&:first-child {
+			> div {
+				> div {
+					display:inline-block;
+					width: auto;
+					padding-left: 5rem;
+					padding-top: 5rem;
+					h3 {
+						color: $black;
+						margin-bottom: 5rem;
+						margin-top: 0;
+					}
+					p:not(.numbr) {
+						font-size: 1.4rem;
+						color: $body;
+
+					}
+				}
+			}
+		}	
+		.overlay {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0; left: 0;
+			background-color:rgba(0, 0, 0, 0.6);
+
+			> div {
+				@include vertical-center;
+			}
+
+			h4 {
+				color: white;
+				font-size: 1.4rem;
+				text-align: center;
+				margin-top: 0;
+			}
+			p {
+				color: white;
+				font-size: 1.2rem;
+				font-family: $heading-font;
+				font-style: italic;
+				text-align: center;
+				max-width: 55%;
+				display: block;
+				margin: 0 auto;
+			}
+		}
+	}
+}
+#charte {
+	width: 100%;
+	height: 38.5rem;
+	background: url('../images/asset-charte.jpg') no-repeat center center;
+	background-size: cover;
+	border-bottom: 3px solid $red;
+	> div {
+		height: 100%;
+		@include outer-container;
+	}
+	.half {
+		width: 50%;
+		height: 100%;
+		display: block;
+		float: left;
+		&:first-child {
+			h3 {
+				text-transform: uppercase;
+				color: white;
+				font-style: italic;
+				font-size: 3.2rem;
+				text-align: center;
+				
+				margin: 0;
+				@include vertical-center;
+			}
+		}
+		&:last-child {
+			color: white;
+			> div {
+				@include vertical-center;
+				padding-left: 10rem;
+				p {
+					font-size: 1.4rem;
+					&:first-child {
+						margin-top: 0;
+					}
+				}
+			}
+		}
+	}
+}
+#stylists {
+	margin: 10rem 0;
+
+	h3, p {
+		width: 100%;
+		text-align:center;
+	}
+	h3 {
+		margin-top: 0;
+	}
+	section.stylists {
+		@include outer-container;
+		margin-top: 12.5rem;
+
+		.stylist {
+			width: 25%;
+			display:inline-block;
+			vertical-align:top;
+			padding: 5rem 3rem 4rem;
+			float: left;
+			min-height: 52rem;
+
+			img {
+				display:block; 
+				max-width: 100%;
+			}
+			h4 {
+				font-size: 1.75rem;
+				margin-bottom: 0;
+				text-align: center;
+			}
+			h5 {
+				color: $red;
+				font-style: italic;
+				font-size: 1.4rem;
+				margin-top: 0;
+				text-align: center;
+			}
+			p {
+				font-size:1.2rem;
+				color: $body;
+			}
+			background-color: $even;
+			&:nth-child(2n+1) {
+				background-color: $odd;
+			}
+		}
+		div.recruit {
+			background: $red;
+			width: 50%;
+			float: left;
+			min-height: 52rem;
+
+			> div {
+				@include vertical-center;
+
+				> div {
+					width: 21rem;
+					margin: 0 auto;
+				}
+			}
+
+			p {
+				font-family: $heading-font;
+				text-transform: uppercase;
+				color: white;
+				font-style: italic;
+				font-size: 1.4rem;
+				text-align: center;
+				max-width: 17rem;
+				margin: 0 auto;
+			}
+
+		}
+	}
+}
+#gallery {
+	height: 100vh;
+	min-height: 100vh;
+	overflow: hidden;
+
+	.heading {
+		position: absolute;
+		z-index: 999;
+		width: 65rem;
+	    left: 50%;
+	    margin-left: -32.5rem;
+
+		background: rgba(0,0,0,0.45);
+		text-align: center;
+		padding: 7rem 0;
+		h3 {
+			color: white;
+		}
+	}
+			
+			
+	#slider {
+		a.control_next,
+		a.control_prev {
+			display: block;
+			@include size(3rem 4.5rem);
+			position: absolute;
+			z-index: 99;
+		}
+		a.control_next {
+			background: url('../images/icon-arrow-right.png') no-repeat center center;
+			background-size: 80%;
+			top: 50%; margin-top: -2.25rem;
+			right: 7.5rem;
+		}
+		a.control_prev {
+			background: url('../images/icon-arrow-left.png') no-repeat center center;
+			background-size: 80%;
+			top: 50%; margin-top: -2.25rem;
+			left: 7.5rem;
+		}
+		ul {
+		    padding: 0;
+			margin: 0 !important;
+			li {
+				width: 100%;
+			}
+		}
+	}
+}
+
+#tarifs {
+	margin: 10rem 0;
+	@include outer-container;
+	p.numbr, h3 {
+		width: 100%;
+		text-align: center;
+	}
+	h3 {
+		margin-top: 0;
+		margin-bottom: 16rem;
+	}
+}
+
+#map {
+	position: relative;
+	.heading {
+		display: block;
+		@include size(43rem 22rem);
+		padding-left: 7.5rem;
+		padding-top: 5.5rem;
+		background-color: white;
+		position: absolute;
+		top: 9.5rem;
+		left: 14.5rem;
+
+		h5 {
+			font-size: 2.8rem;
+			margin-top: 0;
+			line-height: 4.1rem;
+		}
+	}
+	.footer-infos {
+		width: 100%;
+		height: 18.75rem;
+		background-color: rgba(255,255,255,0.9);
+		position: absolute;
+		bottom: 0;
+		> div {
+			@include outer-container;
+		}
+		.third {
+			width: 33%;
+			float: left;
+			text-align: center;
+			p, a {
+				font-family: $heading-font;
+				font-style: italic;
+				font-size: 1.8rem;
+				color: $black;
+				text-decoration: none;
+				display: inline-block;
+				vertical-align: baseline;
+				margin: 0;
+			}
+			img {
+				max-width: 3rem;
+				margin-top: 4.5rem;
+			}
+		}
+	}
+}
+footer {
+	width: 100%;
+	border-top: 2px solid #e5e5e5;
+	height: 10rem;
+	> div {
+		@include outer-container;
+	}
+	p {
+		font-size: 1.4rem;
+		color: $body;
+		font-family: $heading-font; 
+		display: inline-block;
+		vertical-align: middle;
+		float: left;
+	}
+}

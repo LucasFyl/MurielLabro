@@ -78,7 +78,7 @@ module.exports = function (grunt) {
             },
             livereload: {
                 options: {
-                    port: 9000,
+                    port: 35729,
                     middleware: function(connect) {
                         return [
                             connect.static('.tmp'),

@@ -1,7 +1,11 @@
+        <?php snippet('map') ?>
+
 		<!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
-        <script src="../bower_components/jquery/dist/jquery.js"></script>
-        <script src="../bower_components/gsap/src/minified/TweenMax.min.js"></script>
+        <?= js('assets/js/vendor/jquery.min.js') ?>
+        <?= js('assets/js/vendor/TweenMax.min.js') ?>
+        <?= js('assets/js/components/SimpleSlider.js') ?>
+        <?= js('assets/js/app.js') ?>
         <!-- endbower -->
         <!-- endbuild -->
 
