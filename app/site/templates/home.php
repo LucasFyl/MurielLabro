@@ -13,7 +13,7 @@
 						<h2>Salon de coiffure & esthétique</h2>
 					</div>
 					<div class="asset-wave white"></div>
-					<h3>Réservez votre coupe de cheveux avec votre coiffeur</h3>
+					<h3>Réservez votre coupe de cheveux <br/>avec votre coiffeur</h3>
 				</div>
 			</div>
 			

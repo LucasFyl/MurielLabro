@@ -320,7 +320,7 @@ nav {
     width: 100%;
     overflow: hidden; }
     #landing .vertical-center > div {
-      max-width: 55rem;
+      max-width: 75rem;
       display: block;
       margin: 0 auto; }
       #landing .vertical-center > div .brand img {
@@ -345,13 +345,14 @@ nav {
         font-style: italic; }
       #landing .vertical-center > div .asset-wave {
         margin-top: 3.25rem;
-        margin-bottom: 8rem; }
+        margin-bottom: 4rem; }
       #landing .vertical-center > div h3 {
         font-family: "Playfair Display", serif;
         text-align: center;
         color: white;
         font-size: 4.5rem;
-        line-height: 6.2rem; }
+        line-height: 6.2rem;
+        margin: 0; }
 
 section {
   width: 100%;
@@ -625,7 +626,7 @@ section {
       font-family: "Playfair Display", serif;
       font-size: 1.8rem;
       cursor: pointer; }
-      #tarifs .cat-left ul li.active, #tarifs .cat-left ul li:nth-child(2) {
+      #tarifs .cat-left ul li.active {
         background: white;
         color: #fe4739;
         padding-left: 1rem; }

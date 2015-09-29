@@ -13,7 +13,7 @@
 		width: 100%;
 		overflow: hidden;
 		> div {
-			max-width: 55rem;
+			max-width: 75rem;
 			display:block;
 			margin: 0 auto;
 
@@ -44,7 +44,7 @@
 			}
 			.asset-wave {
 				margin-top: 3.25rem;
-				margin-bottom: 8rem;
+				margin-bottom: 4rem;
 			}
 			h3 {
 				font-family: $heading-font;
@@ -52,6 +52,7 @@
 				color: white;
 				font-size: 4.5rem;
 				line-height: 6.2rem;
+				margin: 0;
 			}
 		}
 	}
@@ -354,9 +355,9 @@ section {
 					color: $red;
 					padding-left: 1rem;
 				}
-				&:nth-child(2) {
-					@extend .active;
-				}
+				// &:nth-child(2) {
+				// 	@extend .active;
+				// }
 			}
 		}
 	}

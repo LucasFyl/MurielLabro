@@ -23,7 +23,7 @@
 				<div class="third">
 					<img src="<?php echo url('/assets/images/icon-phone.png') ?>" alt="e-mail" />
 					<div class="asset-wave red"></div>
-					<a href="phone:+33143310035">+33 (0)1 43 31 00 35</a>
+					<a href="tel:+33143310035">+33 (0)1 43 31 00 35</a>
 				</div>
 			</div>
 		</div>
