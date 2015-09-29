@@ -30,9 +30,9 @@
 					<img src="<?php echo url('assets/images/asset-concept-2.jpg') ?>" alt="coupes de cheveux sur mesure" />
 					<div class="overlay">
 						<div>
-							<h4>Coupes de cheveux sur mesure</h4>
+							<h4>Nos coloristes</h4>
 							<div class="asset-wave red"></div>
-							<p>Une coupe de cheveux reflète l'image que l’on veut donner aux autres.</p>
+							<p>Porteuse d'un sens et d'une symbolique, la couleur ne peut pas être choisie à la légère.</p>
 						</div>
 					</div>
 				</div>
@@ -44,9 +44,9 @@
 					<img src="<?php echo url('assets/images/asset-concept-3.jpg') ?>" alt="coupes de cheveux sur mesure" />
 					<div class="overlay">
 						<div>
-							<h4>Coupes de cheveux sur mesure</h4>
+							<h4>Soins et beauté</h4>
 							<div class="asset-wave red"></div>
-							<p>Une coupe de cheveux reflète l'image que l’on veut donner aux autres.</p>
+							<p>La vie est plus agréable lorsque le corps et l'âme vivent en parfaite harmonie.</p>
 						</div>
 					</div>
 				</div>

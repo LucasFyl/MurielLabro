@@ -1,0 +1,13 @@
+Title: Soin
+
+----
+
+Category: coiffure
+
+----
+
+Price1:
+
+----
+
+Price2: 8€

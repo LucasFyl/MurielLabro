@@ -2,8 +2,8 @@ Title: Conseils, essais de coiffure, soin du cheveu, coiffage le jour de la cér
 
 ----
 
-Price1: 300€
+Price1: 
 
 ----
 
-Price2: 
+Price2: 300€

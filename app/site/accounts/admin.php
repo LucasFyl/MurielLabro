@@ -7,8 +7,11 @@ password: >
 language: en
 role: admin
 history:
+  - tarifs/coiffure/forfait-homme/barbe
+  - >
+    tarifs/coiffure/forfait-homme/shampooing_coupe_et_coiffage_couleur
+  - >
+    tarifs/coiffure/forfait-homme/shampooing_coupe_et_coiffage_-7_ans
+  - >
+    tarifs/coiffure/forfait-homme/shampooing_coupe_et_coiffage
   - stylists/valerie
-  - stylists/sabine
-  - stylists/corinne
-  - stylists/sandrine
-  - stylists/kim

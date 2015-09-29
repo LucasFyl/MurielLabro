@@ -91,6 +91,9 @@ i {
   font-style: italic;
   line-height: inherit; }
 
+.italic {
+  font-style: italic; }
+
 strong,
 b {
   font-weight: bold;
@@ -604,6 +607,58 @@ section {
   #tarifs h3 {
     margin-top: 0;
     margin-bottom: 16rem; }
+  #tarifs ul {
+    list-style: none;
+    padding-left: 0; }
+  #tarifs .cat-left {
+    height: 35.5rem;
+    width: 35%;
+    background-color: black;
+    box-sizing: border-box;
+    padding-left: 7.25rem;
+    padding-top: 8rem;
+    display: inline-block;
+    float: left; }
+    #tarifs .cat-left ul li {
+      color: white;
+      line-height: 4rem;
+      font-family: "Playfair Display", serif;
+      font-size: 1.8rem;
+      cursor: pointer; }
+      #tarifs .cat-left ul li.active, #tarifs .cat-left ul li:nth-child(2) {
+        background: white;
+        color: #fe4739;
+        padding-left: 1rem; }
+  #tarifs .prices p {
+    margin-top: 4rem;
+    font-family: "Playfair Display", serif; }
+    #tarifs .prices p:not(.italic) {
+      opacity: .5;
+      margin-top: 0; }
+  #tarifs .prices > div {
+    border: 1px solid #b2b3b2;
+    padding: 4.5rem;
+    width: 60%;
+    display: inline-block;
+    float: right; }
+    #tarifs .prices > div ul {
+      margin: 0; }
+      #tarifs .prices > div ul li:first-child p.italic {
+        position: relative;
+        margin-top: 0; }
+        #tarifs .prices > div ul li:first-child p.italic:before {
+          content: "ch. courts";
+          position: absolute;
+          right: 7rem; }
+        #tarifs .prices > div ul li:first-child p.italic:after {
+          content: "ch. longs";
+          position: absolute;
+          right: 0rem; }
+      #tarifs .prices > div ul li span:nth-child(2) {
+        float: right; }
+      #tarifs .prices > div ul li span:last-of-type {
+        float: right;
+        margin-right: 5rem; }
 
 #map {
   position: relative; }
@@ -650,14 +705,16 @@ section {
         display: inline-block;
         margin: 0;
         position: absolute;
-        bottom: -1.5rem;
+        bottom: 0;
         left: 0;
         width: 100%; }
       #map .footer-infos .third .asset-wave {
         position: absolute;
-        top: 60%; }
+        top: 45%; }
       #map .footer-infos .third img {
         max-width: 3rem;
+        margin-top: 2.5rem; }
+      #map .footer-infos .third:nth-child(2) img {
         margin-top: 4rem; }
 
 footer {

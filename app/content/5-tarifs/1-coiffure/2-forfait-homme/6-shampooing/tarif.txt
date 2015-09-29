@@ -1,0 +1,13 @@
+Title: Shampooing
+
+----
+
+Category: coiffure
+
+----
+
+Price1:
+
+----
+
+Price2: 5€

@@ -330,6 +330,83 @@ section {
 		margin-top: 0;
 		margin-bottom: 16rem;
 	}
+	ul {
+		list-style: none;
+		padding-left: 0;
+	}
+	.cat-left {
+		@include size(35% 35.5rem);
+		background-color: black;
+		box-sizing: border-box;
+		padding-left: 7.25rem;
+		padding-top: 8rem;
+		display:inline-block;
+		float: left;
+		ul {
+			li {
+				color: white;
+				line-height: 4rem;
+				font-family: $heading-font;
+				font-size: 1.8rem;
+				cursor: pointer;
+				&.active {
+					background:white;
+					color: $red;
+					padding-left: 1rem;
+				}
+				&:nth-child(2) {
+					@extend .active;
+				}
+			}
+		}
+	}
+	.prices {
+		p {
+			margin-top: 4rem;
+			font-family:$heading-font;
+			&:not(.italic) {
+				opacity: .5;
+				margin-top: 0;
+			}
+
+		}
+			
+		> div {
+			border: 1px solid #b2b3b2;
+			padding: 4.5rem;
+			width: 60%;
+			display: inline-block;
+			float: right;
+			ul {
+				margin: 0;
+				li {
+					&:first-child {
+						p.italic {
+							position: relative;
+							margin-top: 0;
+							&:before {
+								content: "ch. courts";
+								position: absolute;
+								right: 7rem;
+							}
+							&:after {
+								content: "ch. longs";
+								position: absolute;
+								right: 0rem;
+							}
+						}
+					}
+					span:nth-child(2) {
+						float: right;
+					}
+					span:last-of-type {
+						float: right;
+						margin-right: 5rem;
+					}
+				}
+			}
+		}
+	}
 }
 
 #map {
@@ -376,17 +453,22 @@ section {
 
 				margin: 0;
 				position: absolute;
-				bottom: -1.5rem;
+				bottom: 0;
 				left: 0;
 				width: 100%;
 			}
 			.asset-wave {
 				position: absolute;
-				top: 60%;
+				top: 45%;
 			}
 			img {
 				max-width: 3rem;
-				margin-top: 4rem;
+				margin-top: 2.5rem;
+			}
+			&:nth-child(2) {
+				img {
+					margin-top: 4rem;
+				}
 			}
 		}
 	}

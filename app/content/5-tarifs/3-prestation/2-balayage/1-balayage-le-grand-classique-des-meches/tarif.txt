@@ -6,4 +6,4 @@ Price1:
 
 ----
 
-Price2: 
+Price2: de 45 à 95€
