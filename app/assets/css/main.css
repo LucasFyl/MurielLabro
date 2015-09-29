@@ -220,6 +220,69 @@ nav {
       nav ul li:last-child {
         padding-right: 0; }
 
+#slider {
+  position: relative;
+  overflow: visible;
+  margin: 0 auto; }
+  @media screen and (max-width: 480px) {
+    #slider {
+      max-width: 100%; } }
+  #slider ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    list-style-type: none; }
+    #slider ul li {
+      position: relative;
+      display: block;
+      float: left;
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      text-align: center; }
+      #slider ul li img {
+        display: inline-block;
+        vertical-align: bottom;
+        width: 100%;
+        height: auto; }
+  #slider a.control_prev, #slider a.control_next {
+    position: absolute;
+    top: 40%;
+    z-index: 999;
+    display: block;
+    height: 6rem;
+    width: 6rem;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    transition: all 0.25s ease; }
+  #slider a.control_prev:hover, #slider a.control_next:hover {
+    -webkit-box-shadow: 0px 10px 50px -10px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 10px 50px -10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 10px 50px -10px rgba(0, 0, 0, 0.15);
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    transition: all 0.25s ease; }
+  #slider a.control_prev {
+    background: url("../images/icon-slider-left.png") no-repeat center center;
+    background-size: 15%;
+    background-color: white;
+    cursor: pointer;
+    left: -3rem; }
+    @media screen and (max-width: 480px) {
+      #slider a.control_prev {
+        left: 0; } }
+  #slider a.control_next {
+    background: url("../images/icon-slider-right.png") no-repeat center center;
+    background-size: 15%;
+    background-color: white;
+    cursor: pointer;
+    right: -3rem; }
+    @media screen and (max-width: 480px) {
+      #slider a.control_next {
+        right: 0; } }
+
 /* Individual pages styles  ***********************/
 #landing {
   height: 100vh;
@@ -486,6 +549,8 @@ section {
     padding: 7rem 0; }
     #gallery .heading h3 {
       color: white; }
+  #gallery #slider .outer-wrap {
+    height: 100vh; }
   #gallery #slider a.control_next,
   #gallery #slider a.control_prev {
     display: block;
@@ -507,9 +572,9 @@ section {
     left: 7.5rem; }
   #gallery #slider ul {
     padding: 0;
-    margin: 0 !important; }
-    #gallery #slider ul li {
-      width: 100%; }
+    margin-top: 0; }
+    #gallery #slider ul li img {
+      max-width: 100%; }
 
 #tarifs {
   margin: 10rem 0;
