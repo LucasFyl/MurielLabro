@@ -402,13 +402,33 @@ section {
       width: 25%;
       display: inline-block;
       vertical-align: top;
-      padding: 5rem 3rem 4rem;
+      padding: 5rem 3rem 0 4rem;
       float: left;
-      min-height: 52rem;
-      background-color: #f2f2f2; }
-      #stylists section.stylists .stylist img {
-        display: block;
-        max-width: 100%; }
+      min-height: 40rem;
+      background-color: #f7f7f7; }
+      #stylists section.stylists .stylist .mask {
+        max-width: 80%;
+        margin-left: 10%;
+        border-radius: 70px;
+        overflow: hidden;
+        -webkit-transform: rotate(40deg);
+        -moz-transform: rotate(40deg);
+        -ms-transform: rotate(40deg);
+        -o-transform: rotate(40deg);
+        transform: rotate(40deg); }
+        #stylists section.stylists .stylist .mask .zoomer {
+          -webkit-transition: all 0.25s ease;
+          -moz-transition: all 0.25s ease;
+          transition: all 0.25s ease; }
+        #stylists section.stylists .stylist .mask img {
+          display: block;
+          max-width: 100%;
+          -webkit-transform: rotate(-40deg);
+          -moz-transform: rotate(-40deg);
+          -ms-transform: rotate(-40deg);
+          -o-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+          border-radius: 70px; }
       #stylists section.stylists .stylist h4 {
         font-size: 1.75rem;
         margin-bottom: 0;
@@ -422,8 +442,8 @@ section {
       #stylists section.stylists .stylist p {
         font-size: 1.2rem;
         color: rgba(5, 5, 5, 0.4); }
-      #stylists section.stylists .stylist:nth-child(2n+1) {
-        background-color: #f7f7f7; }
+      #stylists section.stylists .stylist:nth-child(2), #stylists section.stylists .stylist:nth-child(4), #stylists section.stylists .stylist:nth-child(5), #stylists section.stylists .stylist:nth-child(7), #stylists section.stylists .stylist:nth-child(10) {
+        background-color: #f2f2f2; }
     #stylists section.stylists div.recruit {
       background: #fe4739;
       background-color: #fe4b3e;
@@ -431,7 +451,7 @@ section {
       background-image: linear-gradient(#fe4b3e, #ff5a4e);
       width: 50%;
       float: left;
-      min-height: 52rem;
+      min-height: 40rem;
       position: relative; }
       #stylists section.stylists div.recruit > div {
         position: absolute;

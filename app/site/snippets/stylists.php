@@ -8,7 +8,11 @@
 
  		<div class="stylist">
 	 		<?php if($img = $s->images()->find('id.jpg') ): ?>
-	        <img src="<?php echo $img->url() ?>" alt="<?php echo $s->title() ?>">
+	 		<!-- <div class="zoomer"> -->
+	 			<div class="mask">
+	        		<img src="<?php echo $img->url() ?>" alt="<?php echo $s->title() ?>">
+	 			</div>
+	 		<!-- </div> -->
 	        <?php endif ?>
 	        <div class="overlay">
 	        	<h4><?php echo $s->title()->html() ?></h4>

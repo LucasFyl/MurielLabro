@@ -179,13 +179,26 @@ section {
 			width: 25%;
 			display:inline-block;
 			vertical-align:top;
-			padding: 5rem 3rem 4rem;
+			padding: 5rem 3rem 0 4rem;
 			float: left;
-			min-height: 52rem;
+			min-height: 40rem;
 
-			img {
-				display:block; 
-				max-width: 100%;
+			
+			.mask {
+				max-width: 80%;
+				margin-left: 10%;
+				border-radius: 70px;
+			    overflow: hidden;
+				@include transform(rotate(40deg));
+				.zoomer {
+					@include transition(all 0.25s ease);
+				}
+				img {
+					display:block; 
+					max-width: 100%;
+				    @include transform(rotate(-40deg));
+				    border-radius: 70px;
+				}
 			}
 			h4 {
 				font-size: 1.75rem;
@@ -203,9 +216,13 @@ section {
 				font-size:1.2rem;
 				color: $body;
 			}
-			background-color: $even;
-			&:nth-child(2n+1) {
-				background-color: $odd;
+			background-color: $odd;
+			&:nth-child(2),
+			&:nth-child(4),
+			&:nth-child(5),
+			&:nth-child(7),
+			&:nth-child(10) {
+				background-color: $even;
 			}
 		}
 		div.recruit {
@@ -213,7 +230,7 @@ section {
 			@include linear-gradient(#fe4b3e, #ff5a4e);
 			width: 50%;
 			float: left;
-			min-height: 52rem;
+			min-height: 40rem;
 			position: relative;
 
 			> div {
