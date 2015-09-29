@@ -9,11 +9,11 @@
 
 	.vertical-center {
 		@include vertical-center;
+		top: 40% !important;
 		width: 100%;
 		overflow: hidden;
 		> div {
-			// width: 55%;
-			max-width: 52rem;
+			max-width: 55rem;
 			display:block;
 			margin: 0 auto;
 
@@ -69,9 +69,6 @@ section {
 	}
 
 	.square {
-		// .overlay {
-		// 	display:none;
-		// }	
 		&:first-child {
 			> div {
 				> div {
@@ -115,7 +112,7 @@ section {
 				font-family: $heading-font;
 				font-style: italic;
 				text-align: center;
-				max-width: 55%;
+				max-width: 40%;
 				display: block;
 				margin: 0 auto;
 			}
@@ -213,15 +210,21 @@ section {
 		}
 		div.recruit {
 			background: $red;
+			@include linear-gradient(#fe4b3e, #ff5a4e);
 			width: 50%;
 			float: left;
 			min-height: 52rem;
+			position: relative;
 
 			> div {
-				@include vertical-center;
+				// @include vertical-center;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
 
 				> div {
-					width: 21rem;
+					width: 19rem;
 					margin: 0 auto;
 				}
 			}
@@ -335,6 +338,9 @@ section {
 			width: 33%;
 			float: left;
 			text-align: center;
+			position: relative;
+			min-height: 14.2rem;
+
 			p, a {
 				font-family: $heading-font;
 				font-style: italic;
@@ -342,8 +348,12 @@ section {
 				color: $black;
 				text-decoration: none;
 				display: inline-block;
-				vertical-align: baseline;
+
 				margin: 0;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
 			}
 			img {
 				max-width: 3rem;
@@ -366,5 +376,50 @@ footer {
 		display: inline-block;
 		vertical-align: middle;
 		float: left;
+		margin: 4rem 0 0 0;
+	}
+	.social {
+		display: inline-block;
+    	float: right;
+    	margin-top: 4rem;
+		ul {
+			padding-left: 0;
+			margin: 0;
+			display:inline-block;
+			list-style: none;
+			li {
+				@include size(1.4rem);
+				box-sizing: content-box;
+				display: inline-block;
+				padding: 0 1rem;
+				opacity: 0.3;
+				a {
+					display:block;
+					@include size(100%);
+					text-indent: -99999px;
+					overflow: hidden;
+				}
+				&:first-child {
+					padding-left: 0px;
+					a {
+						background: url('../images/icon-facebook.png')  no-repeat center center;
+						background-size: .6rem;
+					}
+				}
+				&:nth-child(2){
+					a {
+						background: url('../images/icon-twitter.png')  no-repeat center center;
+						background-size: 1.4rem;
+					}
+				}
+				&:last-child {
+					padding-right: 0;
+					a {
+						background: url('../images/icon-instagram.png')  no-repeat center center;
+						background-size: 1.4rem;
+					}
+				}
+			}
+		}
 	}
 }

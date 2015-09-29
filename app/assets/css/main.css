@@ -16,6 +16,9 @@ html {
 /**
  * Base styles ~ Type
  */
+body {
+  font-family: "Source Sans Pro", sans-serif; }
+
 h1, .h1,
 h2, .h2,
 h3, .h3,
@@ -234,10 +237,11 @@ nav {
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
+    top: 40% !important;
     width: 100%;
     overflow: hidden; }
     #landing .vertical-center > div {
-      max-width: 52rem;
+      max-width: 55rem;
       display: block;
       margin: 0 auto; }
       #landing .vertical-center > div .brand img {
@@ -324,7 +328,7 @@ section {
       font-family: "Playfair Display", serif;
       font-style: italic;
       text-align: center;
-      max-width: 55%;
+      max-width: 40%;
       display: block;
       margin: 0 auto; }
 
@@ -422,19 +426,20 @@ section {
         background-color: #f7f7f7; }
     #stylists section.stylists div.recruit {
       background: #fe4739;
+      background-color: #fe4b3e;
+      background-image: -webkit-linear-gradient(#fe4b3e, #ff5a4e);
+      background-image: linear-gradient(#fe4b3e, #ff5a4e);
       width: 50%;
       float: left;
-      min-height: 52rem; }
+      min-height: 52rem;
+      position: relative; }
       #stylists section.stylists div.recruit > div {
-        position: relative;
+        position: absolute;
         top: 50%;
-        -webkit-transform: translateY(-50%);
-        -moz-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        -o-transform: translateY(-50%);
-        transform: translateY(-50%); }
+        left: 50%;
+        transform: translate(-50%, -50%); }
         #stylists section.stylists div.recruit > div > div {
-          width: 21rem;
+          width: 19rem;
           margin: 0 auto; }
       #stylists section.stylists div.recruit p {
         font-family: "Playfair Display", serif;
@@ -535,7 +540,9 @@ section {
     #map .footer-infos .third {
       width: 33%;
       float: left;
-      text-align: center; }
+      text-align: center;
+      position: relative;
+      min-height: 14.2rem; }
       #map .footer-infos .third p, #map .footer-infos .third a {
         font-family: "Playfair Display", serif;
         font-style: italic;
@@ -543,8 +550,11 @@ section {
         color: #050505;
         text-decoration: none;
         display: inline-block;
-        vertical-align: baseline;
-        margin: 0; }
+        margin: 0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%; }
       #map .footer-infos .third img {
         max-width: 3rem;
         margin-top: 4.5rem; }
@@ -567,7 +577,43 @@ footer {
     font-family: "Playfair Display", serif;
     display: inline-block;
     vertical-align: middle;
-    float: left; }
+    float: left;
+    margin: 4rem 0 0 0; }
+  footer .social {
+    display: inline-block;
+    float: right;
+    margin-top: 4rem; }
+    footer .social ul {
+      padding-left: 0;
+      margin: 0;
+      display: inline-block;
+      list-style: none; }
+      footer .social ul li {
+        height: 1.4rem;
+        width: 1.4rem;
+        box-sizing: content-box;
+        display: inline-block;
+        padding: 0 1rem;
+        opacity: 0.3; }
+        footer .social ul li a {
+          display: block;
+          height: 100%;
+          width: 100%;
+          text-indent: -99999px;
+          overflow: hidden; }
+        footer .social ul li:first-child {
+          padding-left: 0px; }
+          footer .social ul li:first-child a {
+            background: url("../images/icon-facebook.png") no-repeat center center;
+            background-size: .6rem; }
+        footer .social ul li:nth-child(2) a {
+          background: url("../images/icon-twitter.png") no-repeat center center;
+          background-size: 1.4rem; }
+        footer .social ul li:last-child {
+          padding-right: 0; }
+          footer .social ul li:last-child a {
+            background: url("../images/icon-instagram.png") no-repeat center center;
+            background-size: 1.4rem; }
 
 /* Plugin styles  ***********************/
 
