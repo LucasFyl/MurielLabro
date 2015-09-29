@@ -126,14 +126,27 @@ img {
   color: white; }
 
 .asset-wave {
-  margin: 2.5rem auto;
-  width: 100%; }
+  margin: 2.5rem auto; }
   .asset-wave.white {
-    background: url("../images/asset-wave-white.png") no-repeat center center; }
+    background: url("../images/asset-wave-white.png") no-repeat center center;
+    width: 100%;
+    height: 1rem;
+    background-size: 4.1rem; }
   .asset-wave.red {
-    background: url("../images/asset-wave-red.png") no-repeat center center; }
+    background: url("../images/asset-wave-red.png") no-repeat center center;
+    width: 100%;
+    height: 1rem;
+    background-size: 4.1rem; }
   .asset-wave.vertical {
-    background: url("../images/asset-wave-vertical.png") no-repeat center center; }
+    background: url("../images/asset-wave-vertical.png") no-repeat center center;
+    width: 0.5rem;
+    height: 8.1rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50%;
+    margin: 0;
+    background-size: .5rem; }
 
 p.numbr {
   color: #fe4739;
@@ -637,16 +650,19 @@ section {
         display: inline-block;
         margin: 0;
         position: absolute;
-        bottom: 0;
+        bottom: -1.5rem;
         left: 0;
         width: 100%; }
+      #map .footer-infos .third .asset-wave {
+        position: absolute;
+        top: 60%; }
       #map .footer-infos .third img {
         max-width: 3rem;
-        margin-top: 4.5rem; }
+        margin-top: 4rem; }
 
 footer {
   width: 100%;
-  border-top: 2px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
   height: 10rem; }
   footer > div {
     max-width: 77.2%;

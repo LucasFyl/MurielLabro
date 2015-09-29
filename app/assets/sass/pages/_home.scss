@@ -376,20 +376,24 @@ section {
 
 				margin: 0;
 				position: absolute;
-				bottom: 0;
+				bottom: -1.5rem;
 				left: 0;
 				width: 100%;
 			}
+			.asset-wave {
+				position: absolute;
+				top: 60%;
+			}
 			img {
 				max-width: 3rem;
-				margin-top: 4.5rem;
+				margin-top: 4rem;
 			}
 		}
 	}
 }
 footer {
 	width: 100%;
-	border-top: 2px solid #e5e5e5;
+	border-top: 1px solid #e5e5e5;
 	height: 10rem;
 	> div {
 		@include outer-container;
