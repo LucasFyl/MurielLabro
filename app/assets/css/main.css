@@ -636,28 +636,32 @@ section {
     #tarifs .prices p:not(.italic) {
       opacity: .5;
       margin-top: 0; }
-  #tarifs .prices > div {
+  #tarifs .prices > div.tab {
     border: 1px solid #b2b3b2;
     padding: 4.5rem;
     width: 60%;
-    display: inline-block;
-    float: right; }
-    #tarifs .prices > div ul {
+    float: right;
+    opacity: 0;
+    display: none; }
+    #tarifs .prices > div.tab.is-open {
+      opacity: 1;
+      display: inline-block; }
+    #tarifs .prices > div.tab ul {
       margin: 0; }
-      #tarifs .prices > div ul li:first-child p.italic {
+      #tarifs .prices > div.tab ul li:first-child p.italic {
         position: relative;
         margin-top: 0; }
-        #tarifs .prices > div ul li:first-child p.italic:before {
+        #tarifs .prices > div.tab ul li:first-child p.italic:before {
           content: "ch. courts";
           position: absolute;
           right: 7rem; }
-        #tarifs .prices > div ul li:first-child p.italic:after {
+        #tarifs .prices > div.tab ul li:first-child p.italic:after {
           content: "ch. longs";
           position: absolute;
           right: 0rem; }
-      #tarifs .prices > div ul li span:nth-child(2) {
+      #tarifs .prices > div.tab ul li span:nth-child(2) {
         float: right; }
-      #tarifs .prices > div ul li span:last-of-type {
+      #tarifs .prices > div.tab ul li span:last-of-type {
         float: right;
         margin-right: 5rem; }
 

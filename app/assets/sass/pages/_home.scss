@@ -372,12 +372,18 @@ section {
 
 		}
 			
-		> div {
+		> div.tab {
 			border: 1px solid #b2b3b2;
 			padding: 4.5rem;
 			width: 60%;
-			display: inline-block;
+			// display: inline-block;
 			float: right;
+			opacity: 0;
+			display:none;
+			&.is-open {
+				opacity: 1;
+				display:inline-block;
+			}
 			ul {
 				margin: 0;
 				li {

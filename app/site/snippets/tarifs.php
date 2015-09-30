@@ -3,16 +3,16 @@
  	<h3><?php echo $data->title()->html() ?></h3>
 	<div class="cat-left">
 		<!-- foreach category -->
-		<ul>
+		<ul class="tabs-link">
 			<?php foreach(page('tarifs')->children()->visible() as $tarifcat): ?>
 			<li class="<?php echo $tarifcat->title()->html() ?>"><?php echo $tarifcat->title() ?></li>
 			<?php endforeach ?>
 		</ul>
 	</div>
-	<div class="prices">
+	<div class="prices tabs-content">
 		<!-- foreach price -->
 		<?php foreach(page('tarifs')->children()->visible() as $tarifcat): ?>
-		<div class="<?php echo $tarifcat->title()->html() ?>" style="margin-bottom:5rem;">
+		<div class="<?php echo $tarifcat->title()->html() ?> tab" style="margin-bottom:5rem;">
 			<ul>
 			<?php foreach($tarifcat->children()->visible() as $tarif): ?>
 				<li><p class="italic"><?php echo $tarif->title() ?></p>
