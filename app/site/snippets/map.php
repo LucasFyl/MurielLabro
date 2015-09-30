@@ -4,7 +4,7 @@
 			<h5>Un renseignement ou un rendez-vous ?</h5>
 		</div>
 		
-		<a href="#">
+		<a href="https://goo.gl/maps/AZNXMTuGEnN2" target="_blank">
 			<img src="<?php echo url('/assets/images/asset-bg-map.jpg') ?>" alt="26 avenue Gobelins, 75013 Paris" />
 		</a>
 
@@ -13,7 +13,7 @@
 				<div class="third">
 					<img src="<?php echo url('/assets/images/icon-pin.png') ?>" alt="Adresse" />
 					<div class="asset-wave red"></div>
-					<p>26 avenue Gobelins, 75013 Paris</p>
+					<a href="https://goo.gl/maps/AZNXMTuGEnN2" target="_blank">26 avenue Gobelins, 75013 Paris</a>
 				</div>
 				<div class="third">
 					<img src="<?php echo url('/assets/images/icon-mail.png') ?>" alt="e-mail" />

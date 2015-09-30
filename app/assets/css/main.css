@@ -252,8 +252,13 @@ nav {
     position: relative;
     margin: 0;
     padding: 0;
-    height: 100vh;
     list-style-type: none; }
+    @media screen and (min-width: 1024px) {
+      #slider ul {
+        height: 100vh; } }
+    @media screen and (max-width: 1024px) {
+      #slider ul {
+        height: 30rem; } }
     #slider ul li {
       position: relative;
       display: block;
@@ -261,14 +266,28 @@ nav {
       margin: 0;
       padding: 0;
       width: 100vw;
-      height: 100vh;
       text-align: center; }
+      @media screen and (min-width: 1024px) {
+        #slider ul li {
+          height: 100vh; } }
+      @media screen and (max-width: 1024px) {
+        #slider ul li {
+          height: 30rem; } }
       #slider ul li img {
         display: inline-block;
         vertical-align: bottom;
-        max-width: none;
-        height: 100%;
-        min-width: 100%; }
+        width: 100%;
+        height: auto; }
+        @media screen and (max-width: 1024px) {
+          #slider ul li img {
+            width: auto;
+            height: 100%;
+            max-width: none !important;
+            -webkit-transform: translateX(-10%);
+            -moz-transform: translateX(-10%);
+            -ms-transform: translateX(-10%);
+            -o-transform: translateX(-10%);
+            transform: translateX(-10%); } }
   #slider a.control_prev, #slider a.control_next {
     position: absolute;
     top: 40%;
@@ -632,9 +651,11 @@ section {
         margin: 0 auto; }
 
 #gallery {
-  height: 100vh;
-  min-height: 100vh;
   overflow: hidden; }
+  @media screen and (min-width: 1024px) {
+    #gallery {
+      height: 100vh;
+      min-height: 100vh; } }
   #gallery .heading {
     position: absolute;
     z-index: 999;
@@ -653,6 +674,12 @@ section {
         top: 0;
         right: 0;
         margin-left: 0; } }
+    @media screen and (max-width: 1024px) {
+      #gallery .heading {
+        background: transparent;
+        position: static; }
+        #gallery .heading h3 {
+          color: #050505; } }
   #gallery #slider .outer-wrap {
     height: 100vh; }
   #gallery #slider a.control_next,
@@ -671,6 +698,9 @@ section {
     @media screen and (max-width: 480px) {
       #gallery #slider a.control_next {
         right: 1rem; } }
+    @media screen and (max-width: 1024px) {
+      #gallery #slider a.control_next {
+        background-size: 50%; } }
   #gallery #slider a.control_prev {
     background: url("../images/icon-arrow-left.png") no-repeat center center;
     background-size: 80%;
@@ -680,6 +710,9 @@ section {
     @media screen and (max-width: 480px) {
       #gallery #slider a.control_prev {
         left: 1rem; } }
+    @media screen and (max-width: 1024px) {
+      #gallery #slider a.control_prev {
+        background-size: 50%; } }
   #gallery #slider ul {
     padding: 0;
     margin-top: 0; }
@@ -817,7 +850,10 @@ section {
         position: relative;
         left: 0;
         top: 0;
-        padding: 2rem; } }
+        padding: 2rem; }
+        #map .heading p, #map .heading h5 {
+          width: 100%;
+          text-align: center; } }
     @media screen and (min-width: 480px) and (max-width: 768px) {
       #map .heading {
         width: 100%;
@@ -834,10 +870,7 @@ section {
       line-height: 4.1rem; }
   @media screen and (max-width: 480px) {
     #map > a img {
-      max-width: none;
-      position: absolute;
-      height: 53rem;
-      opacity: .2; } }
+      display: none; } }
   @media screen and (min-width: 480px) and (max-width: 768px) {
     #map > a img {
       -webkit-transform: translateY(-11%);

@@ -9,8 +9,13 @@
     position: relative;
     margin: 0;
     padding: 0;
-    height: 100vh;
     list-style-type: none;
+    @include media(min-width 1024px){
+      height: 100vh;
+    }
+    @include media(max-width 1024px){
+      height: 30rem;
+    }
     li {
       position: relative;
       display: block;
@@ -18,17 +23,25 @@
       margin: 0;
       padding: 0;
       width: 100vw;
-      height: 100vh;
       text-align: center;
+      @include media(min-width 1024px){
+        height: 100vh;
+      }
+      @include media(max-width 1024px){
+        height: 30rem;
+      }
 
       img {
         display: inline-block;
         vertical-align: bottom;
-        // width: 100%;
-        // height: auto;
-        max-width: none;
-        height: 100%;
-        min-width:100%;
+        width: 100%;
+        height: auto;
+        @include media(max-width 1024px){
+          width: auto;
+          height: 100%;
+          max-width: none !important;
+          @include transform(translateX(-10%));
+        }
       }
     }
   }

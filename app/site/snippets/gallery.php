@@ -4,7 +4,7 @@
 		<h3><?php echo $data->title()->html() ?></h3>	
 	</div>
 
-	<section class="slider">
+	<!-- <section class="slider"> -->
 		<div class="outer-wrap">
 			<div id="slider">
 				<a href="#" class="control_next"></a>
@@ -18,5 +18,5 @@
 				</ul>  
 			</div>
 		</div>
-	</section>
+	<!-- </section> -->
 </section>

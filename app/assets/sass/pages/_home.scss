@@ -342,8 +342,10 @@ section {
 	}
 }
 #gallery {
-	height: 100vh;
-	min-height: 100vh;
+	@include media(min-width 1024px){
+		height: 100vh;
+		min-height: 100vh;
+	}
 	overflow: hidden;
 
 	.heading {
@@ -367,6 +369,13 @@ section {
 			right: 0;
 			margin-left: 0;
 		}
+		@include media(max-width 1024px){
+			background: transparent;
+			position: static;
+			h3 {
+				color: $black;
+			}
+		}
 	}
 			
 			
@@ -389,6 +398,9 @@ section {
 			@include media($mobile) {
 				right: 1rem;
 			}
+			@include media(max-width 1024px){
+				background-size:50%;
+			}
 		}
 		a.control_prev {
 			background: url('../images/icon-arrow-left.png') no-repeat center center;
@@ -397,6 +409,9 @@ section {
 			left: 7.5rem;
 			@include media($mobile) {
 				left: 1rem;
+			}
+			@include media(max-width 1024px){
+				background-size:50%;
 			}
 		}
 		ul {
@@ -567,6 +582,10 @@ section {
 			left: 0;
 			top: 0;
 			padding: 2rem;
+			p, h5 {
+				width: 100%;
+				text-align: center;
+			}
 		}
 
 		@include media($tablet){
@@ -591,10 +610,7 @@ section {
 		img {
 			@include media($mobile){
 
-			    max-width: none;
-			    position: absolute;
-			    height: 53rem;
-			    opacity: .2;
+			    display:none;
 
 			}
 			@include media($tablet){
