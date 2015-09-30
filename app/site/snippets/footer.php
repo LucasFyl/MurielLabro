@@ -4,7 +4,9 @@
         <!-- bower:js -->
         <?= js('assets/js/vendor/jquery.min.js') ?>
         <?= js('assets/js/vendor/TweenMax.min.js') ?>
+        <?= js('assets/js/plugins/ScrollToPlugin.min.js') ?>
         <?= js('assets/js/components/SimpleSlider.js') ?>
+        <?= js('assets/js/components/ScrollNav.js') ?>
         <?= js('assets/js/components/Prices.js') ?>
         <?= js('assets/js/app.js') ?>
         <!-- endbower -->

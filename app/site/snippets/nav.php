@@ -1,25 +1,20 @@
 <nav role="navigation">
 
-  <ul class="">
-    <!--<?php foreach($pages->visible() as $p): ?>
+  <ul>
     <li>
-      <a <?php e($p->isOpen(), ' class="active"') ?> href="<?php echo $p->url() ?>"><?php echo $p->title()->html() ?></a>
-    </li>
-    <?php endforeach ?>-->
-    <li>
-    	<a href="/concept">Notre Concept</a>
+    	<a href="#" data-nav="concept">Notre Concept</a>
     </li>
     <li>
-    	<a href="/concept">Nos Stylistes</a>
+    	<a href="#" data-nav="stylists">Nos Stylistes</a>
     </li>
     <li>
-    	<a href="/concept">Galerie Photo</a>
+    	<a href="#" data-nav="gallery">Galerie Photo</a>
     </li>
     <li>
-    	<a href="/concept">Tarifs</a>
+    	<a href="#" data-nav="tarifs">Tarifs</a>
     </li>
     <li>
-    	<a href="/concept">Adresse & Contact</a>
+    	<a href="#" data-nav="map">Adresse & Contact</a>
     </li>
   </ul>
 
