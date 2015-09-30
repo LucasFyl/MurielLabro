@@ -226,6 +226,9 @@ nav {
     nav ul li {
       display: inline-block;
       padding: 0 3.75rem; }
+      @media screen and (min-width: 480px) and (max-width: 768px) {
+        nav ul li {
+          padding: 0 2rem; } }
       nav ul li a {
         font-size: 1.4rem;
         text-transform: uppercase;
@@ -360,6 +363,10 @@ html, body {
         font-size: 4.5rem;
         line-height: 6.2rem;
         margin: 0; }
+        @media screen and (max-width: 480px) {
+          #landing .vertical-center > div h3 {
+            font-size: 2.2rem;
+            line-height: 3.2rem; } }
 
 section {
   width: 100%;
@@ -461,6 +468,9 @@ section {
           clear: both;
           content: "";
           display: table; } }
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    #charte .asset-wave {
+      left: 56%; } }
   #charte .half {
     width: 50%;
     height: 100%;
@@ -542,6 +552,10 @@ section {
           width: 100%;
           margin: 0 auto;
           float: none; } }
+      @media screen and (min-width: 480px) and (max-width: 768px) {
+        #stylists section.stylists .stylist {
+          width: 50%;
+          min-height: 42rem; } }
       #stylists section.stylists .stylist .mask {
         max-width: 80%;
         margin-left: 10%;
@@ -590,6 +604,9 @@ section {
       min-height: 40rem;
       position: relative; }
       @media screen and (max-width: 480px) {
+        #stylists section.stylists div.recruit {
+          width: 100%; } }
+      @media screen and (min-width: 480px) and (max-width: 768px) {
         #stylists section.stylists div.recruit {
           width: 100%; } }
       #stylists section.stylists div.recruit > div {
@@ -696,7 +713,7 @@ section {
     padding-top: 8rem;
     display: inline-block;
     float: left; }
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 768px) {
       #tarifs .cat-left {
         width: 100%;
         padding-left: 3.25rem;
@@ -712,19 +729,19 @@ section {
         background: white;
         color: #fe4739;
         padding-left: 1rem; }
-      @media screen and (max-width: 480px) {
+      @media screen and (max-width: 1025px) {
         #tarifs .cat-left ul li {
           font-size: 1.4rem; } }
   #tarifs .prices p {
     margin-top: 4rem;
     font-family: "Playfair Display", serif; }
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 768px) {
       #tarifs .prices p {
         font-size: 1rem; } }
     #tarifs .prices p:not(.italic) {
       opacity: .5;
       margin-top: 0; }
-      @media screen and (max-width: 480px) {
+      @media screen and (max-width: 768px) {
         #tarifs .prices p:not(.italic) {
           max-width: 88%; } }
   #tarifs .prices > div.tab {
@@ -734,7 +751,7 @@ section {
     float: right;
     opacity: 0;
     display: none; }
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 768px) {
       #tarifs .prices > div.tab {
         width: 100%;
         float: none;
@@ -752,7 +769,7 @@ section {
           content: "ch. courts";
           position: absolute;
           right: 7rem; }
-          @media screen and (max-width: 480px) {
+          @media screen and (max-width: 768px) {
             #tarifs .prices > div.tab ul li:first-child p.italic:before {
               content: "ch. courts/";
               right: 3rem; } }
@@ -760,23 +777,26 @@ section {
           content: "ch. longs";
           position: absolute;
           right: 0rem; }
-          @media screen and (max-width: 480px) {
+          @media screen and (max-width: 768px) {
             #tarifs .prices > div.tab ul li:first-child p.italic:after {
               right: -1rem; } }
       #tarifs .prices > div.tab ul li span:nth-child(2) {
         float: right; }
-        @media screen and (max-width: 480px) {
+        @media screen and (max-width: 768px) {
           #tarifs .prices > div.tab ul li span:nth-child(2) {
             position: absolute;
             right: 2rem; } }
       #tarifs .prices > div.tab ul li span:last-of-type {
         float: right;
         margin-right: 5rem; }
-        @media screen and (max-width: 480px) {
+        @media screen and (max-width: 768px) {
           #tarifs .prices > div.tab ul li span:last-of-type {
             position: absolute;
             right: 3rem;
             margin-right: 1rem; } }
+        @media screen and (min-width: 480px) and (max-width: 768px) {
+          #tarifs .prices > div.tab ul li span:last-of-type {
+            margin-right: 4rem; } }
 
 #map {
   position: relative;
@@ -798,6 +818,16 @@ section {
         left: 0;
         top: 0;
         padding: 2rem; } }
+    @media screen and (min-width: 480px) and (max-width: 768px) {
+      #map .heading {
+        width: 100%;
+        top: -3rem;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.7);
+        z-index: 99; } }
+    @media screen and (min-width: 900px) and (max-width: 1025px) {
+      #map .heading {
+        top: 1.4rem !important; } }
     #map .heading h5 {
       font-size: 2.8rem;
       margin-top: 0;
@@ -808,12 +838,20 @@ section {
       position: absolute;
       height: 53rem;
       opacity: .2; } }
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    #map > a img {
+      -webkit-transform: translateY(-11%);
+      -moz-transform: translateY(-11%);
+      -ms-transform: translateY(-11%);
+      -o-transform: translateY(-11%);
+      transform: translateY(-11%); } }
   #map .footer-infos {
     width: 100%;
     height: 18.75rem;
     background-color: rgba(255, 255, 255, 0.9);
     position: absolute;
-    bottom: 0; }
+    bottom: 0;
+    z-index: 999; }
     @media screen and (max-width: 480px) {
       #map .footer-infos {
         position: static;
